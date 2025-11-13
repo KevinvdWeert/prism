@@ -58,3 +58,16 @@ collect(['setup', 'filters'])
             );
         }
     });
+
+/*
+|--------------------------------------------------------------------------
+| Include SEO Enhancements
+|--------------------------------------------------------------------------
+|
+| Load SEO optimizations for the Eline jewelry website
+|
+*/
+
+if (file_exists(__DIR__ . '/functions/seo.php')) {
+    require_once __DIR__ . '/functions/seo.php';
+}
