@@ -102,11 +102,8 @@ eline sieraden, handgemaakte sierraden, lab-grown diamanten, man made diamonds, 
                    data-aos="fade-up" 
                    data-aos-delay="100">
             <div class="bg-gray-50/80 backdrop-blur-sm rounded-3xl p-8 mb-6 group-hover:bg-gray-100/80 transition-all duration-500 transform group-hover:scale-105 relative overflow-hidden shadow-jewelry hover:shadow-jewelry-hover">
-              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-slate-700 uppercase tracking-wide shadow-sm">
-                nieuw
-              </div>
               <img src="{{ get_theme_file_uri('resources/images/aurum-ring.jpg') }}" 
-                   alt="Aurum diamanten ring - Handgemaakt door Eline" 
+                   alt="Aurum ring" 
                    class="w-full h-40 object-cover rounded-2xl mb-4 transition-transform duration-700"
                    itemprop="image"
                    loading="lazy"
@@ -139,8 +136,11 @@ eline sieraden, handgemaakte sierraden, lab-grown diamanten, man made diamonds, 
                    data-aos="fade-up" 
                    data-aos-delay="200">
             <div class="bg-gray-50/80 backdrop-blur-sm rounded-3xl p-8 mb-6 group-hover:bg-gray-100/80 transition-all duration-500 transform group-hover:scale-105 relative overflow-hidden shadow-jewelry hover:shadow-jewelry-hover">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-slate-700 uppercase tracking-wide shadow-sm">
+                nieuw
+              </div>
               <img src="{{ get_theme_file_uri('resources/images/eclipse-hanger.jpg') }}" 
-                   alt="Eclipse diamanten hanger - Handgemaakt door Eline" 
+                   alt="Eclipse hanger" 
                    class="w-full h-40 object-cover rounded-2xl mb-4 transition-transform duration-700"
                    itemprop="image"
                    loading="lazy"
@@ -174,7 +174,7 @@ eline sieraden, handgemaakte sierraden, lab-grown diamanten, man made diamonds, 
                    data-aos-delay="300">
             <div class="bg-gray-50/80 backdrop-blur-sm rounded-3xl p-8 mb-6 group-hover:bg-gray-100/80 transition-all duration-500 transform group-hover:scale-105 relative overflow-hidden shadow-jewelry hover:shadow-jewelry-hover">
               <img src="{{ get_theme_file_uri('resources/images/celeste-oorbel.jpg') }}" 
-                   alt="Celeste diamanten oorbellen - Handgemaakt door Eline" 
+                   alt="Celeste  oorbel" 
                    class="w-full h-40 object-cover rounded-2xl mb-4 transition-transform duration-700"
                    itemprop="image"
                    loading="lazy"
@@ -208,7 +208,7 @@ eline sieraden, handgemaakte sierraden, lab-grown diamanten, man made diamonds, 
                    data-aos-delay="400">
             <div class="bg-gray-50/80 backdrop-blur-sm rounded-3xl p-8 mb-6 group-hover:bg-gray-100/80 transition-all duration-500 transform group-hover:scale-105 relative overflow-hidden shadow-jewelry hover:shadow-jewelry-hover">
               <img src="{{ get_theme_file_uri('resources/images/obsidian-ring.jpg') }}" 
-                   alt="Obsidian diamanten ring - Handgemaakt door Eline" 
+                   alt="Obsidian ring" 
                    class="w-full h-40 object-cover rounded-2xl mb-4 transition-transform duration-700"
                    itemprop="image"
                    loading="lazy"
