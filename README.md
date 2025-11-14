@@ -9,6 +9,7 @@
 - 💍 Gespecialiseerd voor jewelry/sierraden websites
 - 📱 Volledig responsive design
 - ♿ Accessibility-first development
+- 🧱 **Full WordPress Block Editor (Gutenberg) support**
 
 ## 📋 Project Overzicht
 
@@ -27,6 +28,7 @@ Dit project is uitgevoerd volgens de originele opdracht en bevat:
 - ✨ **SEO optimizations** met structured data
 - ✨ **Performance optimizations**
 - ✨ **Modern JavaScript** interactiviteit
+- ✨ **Complete WordPress Block Editor support** met custom styling voor alle core blocks
 
 ## 🛠 Installatie Instructies
 
@@ -132,6 +134,15 @@ prism/
 - **Acorn Container** voor dependency injection  
 - **Blade Templating** voor clean templates
 - **WordPress Hooks** voor extensibility
+
+### Block Editor (Gutenberg) Support:
+- **Complete block compatibility** met alle WordPress core blocks
+- **Wide & Full alignment** support voor responsive layouts
+- **Custom color palette** integration met Tailwind kleuren
+- **Font size presets** voor consistent typography
+- **Styled blocks** in both editor en front-end
+- **Responsive designs** voor alle block types
+- 📄 See [BLOCKS.md](BLOCKS.md) for complete documentation
 
 ## ⏱ Time Investment: ~4 Hours
 

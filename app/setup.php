@@ -128,6 +128,55 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#customize-selective-refresh-widgets
      */
     add_theme_support('customize-selective-refresh-widgets');
+
+    /**
+     * Enable support for editor styles.
+     *
+     * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#editor-styles
+     */
+    add_theme_support('editor-styles');
+
+    /**
+     * Enable wide and full alignment for blocks.
+     *
+     * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#wide-alignment
+     */
+    add_theme_support('align-wide');
+
+    /**
+     * Enable support for block editor color palette defined in theme.json.
+     *
+     * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#block-color-palettes
+     */
+    add_theme_support('editor-color-palette');
+
+    /**
+     * Enable support for block editor font sizes defined in theme.json.
+     *
+     * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#block-font-sizes
+     */
+    add_theme_support('editor-font-sizes');
+
+    /**
+     * Enable custom line height controls.
+     *
+     * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#custom-line-height
+     */
+    add_theme_support('custom-line-height');
+
+    /**
+     * Enable custom spacing controls (padding, margin).
+     *
+     * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#custom-spacing
+     */
+    add_theme_support('custom-spacing');
+
+    /**
+     * Enable link color control.
+     *
+     * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#experimental-link-color
+     */
+    add_theme_support('link-color');
 }, 20);
 
 /**

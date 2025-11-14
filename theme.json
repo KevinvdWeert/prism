@@ -4,19 +4,21 @@
   "version": 3,
   "settings": {
     "layout": {
-      "contentSize": "48rem"
+      "contentSize": "48rem",
+      "wideSize": "80rem"
     },
     "background": {
       "backgroundImage": true
     },
     "color": {
-      "custom": false,
+      "custom": true,
       "customDuotone": false,
       "customGradient": false,
       "defaultDuotone": false,
       "defaultGradients": false,
       "defaultPalette": false,
-      "duotone": []
+      "duotone": [],
+      "link": true
     },
     "custom": {
       "spacing": {},
@@ -26,12 +28,42 @@
       }
     },
     "spacing": {
+      "blockGap": true,
+      "margin": true,
       "padding": true,
       "units": ["px", "%", "em", "rem", "vw", "vh"]
     },
     "typography": {
+      "customFontSize": true,
       "defaultFontSizes": false,
-      "customFontSize": false
+      "fontSizes": [
+        {
+          "name": "Small",
+          "slug": "small",
+          "size": "0.875rem"
+        },
+        {
+          "name": "Medium",
+          "slug": "medium",
+          "size": "1rem"
+        },
+        {
+          "name": "Large",
+          "slug": "large",
+          "size": "1.25rem"
+        },
+        {
+          "name": "Extra Large",
+          "slug": "x-large",
+          "size": "1.5rem"
+        },
+        {
+          "name": "Huge",
+          "slug": "huge",
+          "size": "2rem"
+        }
+      ],
+      "lineHeight": true
     }
   }
 }
