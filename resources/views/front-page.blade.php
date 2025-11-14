@@ -28,7 +28,7 @@ eline sieraden, handgemaakte sierraden, lab-grown diamanten, man made diamonds, 
             <div data-aos="fade-up" data-aos-delay="200">
               <h1 class="text-5xl lg:text-6xl xl:text-7xl font-ultralight text-slate-900 leading-tight tracking-wide heading-luxury" 
                   itemprop="name">
-                tijdloze sierraden,<br>
+                tijdloze sieraden,<br>
                 <span class="text-slate-600 text-luxury">handgemaakt voor jou</span>
               </h1>
             </div>
