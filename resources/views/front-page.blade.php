@@ -12,8 +12,11 @@ eline sieraden, handgemaakte sierraden, lab-grown diamanten, man made diamonds, 
 
 @section('content')
   {{-- Hero Section --}}
-  <section class="relative bg-gradient-to-br from-gray-50 to-white min-h-screen" itemscope itemtype="https://schema.org/Product">
-    <div class="container mx-auto px-6 py-20">
+  <section class="relative min-h-screen overflow-hidden" 
+           itemscope itemtype="https://schema.org/Product"
+           style="background: linear-gradient(rgba(248, 250, 252, 0.95), rgba(226, 232, 240, 0.95)), url('{{ get_theme_file_uri('resources/images/hero-background.jpg') }}'); background-size: cover; background-position: center; background-attachment: fixed;">
+    
+    <div class="container mx-auto px-6 py-20 relative z-10">
       <div class="grid md:grid-cols-2 gap-16 items-center min-h-[80vh]">
         {{-- Left: Text Content --}}
         <div class="space-y-8">
@@ -34,23 +37,23 @@ eline sieraden, handgemaakte sierraden, lab-grown diamanten, man made diamonds, 
         </div>
         
         {{-- Right: Hero Images --}}
-        <div class="relative" role="img" aria-label="Luxe diamanten ringen collectie">
+        <div class="relative parallax-container" role="img" aria-label="Luxe diamanten ringen collectie">
           <div class="grid grid-cols-2 gap-4">
             <div class="space-y-4">
-              <div class="bg-white p-8 rounded-2xl shadow-lg transform rotate-3 hover:rotate-0 transition duration-500">
-                <img src="{{ get_theme_file_uri('resources/images/stones.jpg') }}" 
-                     alt="Handgemaakte diamanten ring met lab-grown diamant - Eline sieraden collectie" 
-                     class="w-full h-48 object-cover rounded-lg"
+              <div class="bg-white p-8 rounded-2xl shadow-lg transform rotate-3 hover:rotate-0 transition duration-500 parallax-element" data-speed="0.3">
+                <img src="{{ get_theme_file_uri('resources/images/ring1.png') }}" 
+                     alt="Handgemaakte diamanten ring met lab-grown diamant" 
+                     class="w-full h-48 object-cover rounded-lg transform hover:scale-110 transition duration-700"
                      itemprop="image"
                      loading="eager"
                      width="240" height="192">
               </div>
             </div>
             <div class="space-y-4 mt-8">
-              <div class="bg-white p-8 rounded-2xl shadow-lg transform -rotate-3 hover:rotate-0 transition duration-500">
-                <img src="{{ get_theme_file_uri('resources/images/model.jpg') }}" 
-                     alt="Elegante solitair diamanten ring - Handgemaakt door Eline" 
-                     class="w-full h-48 object-cover rounded-lg"
+              <div class="bg-white p-8 rounded-2xl shadow-lg transform -rotate-3 hover:rotate-0 transition duration-500 parallax-element" data-speed="0.2">
+                <img src="{{ get_theme_file_uri('resources/images/ring2.png') }}" 
+                     alt="Elegante solitair diamanten ring" 
+                     class="w-full h-48 object-cover rounded-lg transform hover:scale-110 transition duration-700"
                      loading="eager"
                      width="240" height="192">
               </div>
@@ -227,11 +230,6 @@ eline sieraden, handgemaakte sierraden, lab-grown diamanten, man made diamonds, 
                  loading="lazy"
                  width="600" height="600">
           </div>
-          <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-white rounded-full shadow-xl flex items-center justify-center" role="img" aria-label="Luxe diamant symbool">
-            <svg class="w-16 h-16 text-gray-700" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z"/>
-            </svg>
-          </div>
         </div>
         
         {{-- Right: Content --}}
@@ -241,21 +239,15 @@ eline sieraden, handgemaakte sierraden, lab-grown diamanten, man made diamonds, 
           </header>
           <div class="space-y-6 text-gray-600 text-lg leading-relaxed" itemprop="description">
             <p>
-              Onze lab-grown diamanten zijn identiek aan natuurlijke diamanten, 
-              maar worden <strong>ethisch geproduceerd</strong> in een gecontroleerde omgeving.
-            </p>
-            <p>
-              Ze hebben dezelfde chemische, fysieke en optische eigenschappen 
-              als natuurlijke diamanten, maar zijn <em>milieuvriendelijker</em> en 
-              <em>betaalbaarder</em>.
+              Dolor voluptate irure ad sint proident deserunt ullamco laboris aute. Culpa magna excepteur nisi sunt mollit eu officia incididunt esse exercitation labore. Id laborum tempor Lorem fugiat amet mollit cillum ex voluptate consectetur velit sunt id. Fugiat irure aliqua amet aliqua nulla. Officia elit consequat aliquip tempor laboris non Lorem laboris deserunt.
             </p>
           </div>
           <div class="flex flex-col sm:flex-row gap-4">
             <button class="bg-black text-white px-8 py-4 text-sm font-medium uppercase tracking-widest hover:bg-gray-800 transition duration-500 transform hover:scale-105" aria-label="Ontdek meer over onze lab-grown diamanten collectie">
-              ONTDEK MEER
+              BEKIJK DE COLLECTIE
             </button>
             <button class="text-gray-600 text-sm font-medium uppercase tracking-widest underline hover:text-black transition duration-300" aria-label="Meer informatie over ethische diamanten">
-              MEER INFO
+              OVER BLNG
             </button>
           </div>
         </div>

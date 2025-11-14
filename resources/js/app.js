@@ -121,6 +121,48 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', requestTick);
   }
 
+  // Parallax effect for hero ring images
+  const parallaxElements = document.querySelectorAll('.parallax-element');
+  
+  if (parallaxElements.length > 0) {
+    let ticking = false;
+    
+    function updateParallax() {
+      const scrolled = window.pageYOffset;
+      
+      parallaxElements.forEach(element => {
+        const speed = parseFloat(element.dataset.speed) || 0.5;
+        const yPos = -(scrolled * speed);
+        element.style.transform = `translateY(${yPos}px) ${element.classList.contains('rotate-3') ? 'rotate(3deg)' : 'rotate(-3deg)'}`;
+      });
+      
+      ticking = false;
+    }
+    
+    function requestTick() {
+      if (!ticking) {
+        requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    }
+    
+    window.addEventListener('scroll', requestTick);
+    
+    // Reset transform on hover
+    parallaxElements.forEach(element => {
+      element.addEventListener('mouseenter', function() {
+        this.style.transform = `translateY(0px) rotate(0deg)`;
+      });
+      
+      element.addEventListener('mouseleave', function() {
+        const scrolled = window.pageYOffset;
+        const speed = parseFloat(this.dataset.speed) || 0.5;
+        const yPos = -(scrolled * speed);
+        this.style.transform = `translateY(${yPos}px) ${this.classList.contains('rotate-3') ? 'rotate(3deg)' : 'rotate(-3deg)'}`;
+      });
+    });
+  }
+
   // Header background on scroll
   const header = document.querySelector('header');
   if (header) {
