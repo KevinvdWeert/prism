@@ -3,9 +3,15 @@
     <div class="flex items-center justify-between h-20">
       {{-- Logo --}}
       <div itemscope itemtype="https://schema.org/Organization">
-        <a class="text-2xl font-extralight text-gray-900 tracking-widest" href="{{ home_url('/') }}" itemprop="url" aria-label="Eline Sieraden - Ga naar homepagina">
-          <span itemprop="name">eline</span>
+        <a href="{{ home_url('/') }}" itemprop="url" aria-label="Eline Sieraden - Ga naar homepagina" class="block">
+          <img src="{{ get_theme_file_uri('resources/images/logo.png') }}" 
+               alt="Eline Sieraden Logo" 
+               class="h-8 w-auto"
+               itemprop="logo"
+               width="120" 
+               height="32">
         </a>
+        <meta itemprop="name" content="Eline Sieraden">
         <meta itemprop="description" content="Luxe handgemaakte sierraden met lab-grown diamanten">
       </div>
 
