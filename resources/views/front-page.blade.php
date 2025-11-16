@@ -13,65 +13,72 @@ eline sieraden, handgemaakte sierraden, lab-grown diamanten, man made diamonds, 
 @section('content')
   <main id="main-content">
     {{-- Hero Section --}}
-    <section class="relative min-h-screen hero-section overflow-hidden" 
+    <section class="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white" 
              itemscope itemtype="https://schema.org/JewelryStore">
       
-      {{-- Hero Background Enhancement --}}
-      <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-gradient-to-br from-white/90 via-slate-50/80 to-white/90"></div>
+      {{-- Hero Background Image --}}
+      <div class="absolute inset-0 z-0 pointer-events-none">
+        <img src="{{ get_theme_file_uri('resources/images/hero-background.jpg') }}" 
+             alt="" 
+             class="w-full h-full object-cover opacity-20"
+             loading="eager">
       </div>
-      
-      <div class="relative z-10 container mx-auto px-6 py-20">
-        <div class="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
+
+      <div class="relative z-10 container mx-auto px-6 py-16 lg:py-24">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
           {{-- Left: Text Content --}}
           <div class="space-y-8 text-center lg:text-left">
             <div data-aos="fade-up" data-aos-delay="200">
-              <h1 class="text-5xl lg:text-6xl xl:text-7xl font-ultralight text-slate-900 leading-tight tracking-wide heading-luxury" 
+              <h1 class="text-5xl lg:text-6xl xl:text-7xl font-light text-slate-900 leading-tight tracking-tight" 
                   itemprop="name">
                 tijdloze sieraden,<br>
-                <span class="text-slate-600 text-luxury">handgemaakt voor jou</span>
+                <span class="text-slate-700">handgemaakt voor jou</span>
               </h1>
+            </div>
+            
+            <div data-aos="fade-up" data-aos-delay="300">
+              <p class="text-lg text-slate-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
+                Shop binnen in de wereld van luxe vakmanschap, waar innovatie en elegantie samenkomen. Elk sieraad is met de hand vervaardigd uit de fijnste materialen.
+              </p>
             </div>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" 
                  data-aos="fade-up" data-aos-delay="400">
-              <button class="btn-primary-jewelry hero-button" 
+              <button class="bg-slate-900 text-white px-8 py-4 text-sm font-medium tracking-wider uppercase hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl" 
                       aria-label="Bekijk onze complete sierraden collectie">
-                SHOP COLLECTIE
+                Shop Collectie
               </button>
-              <button class="btn-secondary-jewelry hero-button" 
+              <button class="border-2 border-slate-900 text-slate-900 px-8 py-4 text-sm font-medium tracking-wider uppercase hover:bg-slate-900 hover:text-white transition-all duration-300" 
                       aria-label="Meer informatie over onze handgemaakte sierraden">
-                MEER INFO
+                Meer Info
               </button>
             </div>
           </div>
           
           {{-- Right: Hero Images --}}
-          <div class="relative parallax-container" 
+          <div class="relative" 
                role="img" 
                aria-label="Luxe diamanten ringen collectie"
                data-aos="fade-left" 
                data-aos-delay="600">
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-2 gap-6 max-w-lg mx-auto">
               <div class="space-y-6">
-                <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-jewelry transform rotate-3 hover:rotate-0 transition-all duration-700 parallax-element hero-image" 
-                     data-speed="0.3">
+                <div>
                   <img src="{{ get_theme_file_uri('resources/images/ring1.png') }}" 
                        alt="Handgemaakte diamanten ring met lab-grown diamant" 
-                       class="w-full h-48 object-cover rounded-2xl transform hover:scale-110 transition-transform duration-700"
+                       class="w-full h-40 object-cover rounded-xl"
                        itemprop="image"
                        loading="eager"
-                       width="240" height="192">
+                       width="200" height="160">
                 </div>
               </div>
-              <div class="space-y-6 mt-8">
-                <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-jewelry transform -rotate-3 hover:rotate-0 transition-all duration-700 parallax-element hero-image" 
-                     data-speed="0.2">
+              <div class="space-y-6 pt-8">
+                <div>
                   <img src="{{ get_theme_file_uri('resources/images/ring2.png') }}" 
                        alt="Elegante solitair diamanten ring" 
-                       class="w-full h-48 object-cover rounded-2xl transform hover:scale-110 transition-transform duration-700"
+                       class="w-full h-40 object-cover rounded-xl"
                        loading="eager"
-                       width="240" height="192">
+                       width="200" height="160">
                 </div>
               </div>
             </div>
@@ -81,7 +88,7 @@ eline sieraden, handgemaakte sierraden, lab-grown diamanten, man made diamonds, 
     </section>
 
     {{-- Popular Products Section --}}
-    <section class="py-20 bg-white" 
+    <section class="py-12 bg-white" 
              itemscope itemtype="https://schema.org/ItemList" 
              aria-labelledby="popular-products"
              data-aos="fade-up">
